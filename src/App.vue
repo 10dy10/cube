@@ -7,6 +7,10 @@
       </main>
     </section>
   </div>
+  <div class="scroll-down">
+    <p></p>
+    <div>SCROLL</div>
+  </div>
 </template>
 
 <script>
@@ -24,13 +28,6 @@ export default {
 @import url(./assets/css/reset.css);
 @import url(./assets/css/common.css);
 
-main {
-  width: 100%;
-  height: 100vh;
-  background-image: url(./assets/images/banner01.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
+
 
 </style>
