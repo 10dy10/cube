@@ -5,6 +5,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
 }
 nav ul {
   display: flex;
@@ -19,25 +20,59 @@ nav ul li {
 }
 nav ul li a {
   font-size: 2rem;
+  font-weight: 500;
   color: var(--white);  
-  letter-spacing: 1rem;
+  letter-spacing: 0.8rem;
 }
 
 main {
   width: 100%;
   height: 100vh;
-  background-image: url(../images/banner01.jpg);
+  /* background-image: url(../images/banner01.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(102, 102, 102, .5);
   background-blend-mode: overlay;
-  z-index: -1;
+  z-index: -1; */
+}
+.swiper {
+  filter: grayscale(.2);
+  /* z-index: -1; */
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100vh;
 }
 .scroll-down {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  align-items: center;
   position: fixed;
   left: 50%;
   bottom: 3rem;
   transform: translateX(-50%);
+}
+.scroll-down p {
+  width: 2px;
+  background-color: var(--white);
+  animation: scroll 1.5s alternate-reverse infinite;
+}
+@keyframes scroll {
+  0% {
+    height: 1rem;
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    height: 2.8rem;
+  }
+
+}
+.scroll-down div {
+  font-weight: 300;
+  color: var(--white);
+  letter-spacing: .5rem;
 }
 
 .inner {
