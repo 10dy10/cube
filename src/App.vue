@@ -14,7 +14,7 @@
           @swiper="onSwiper"
           @slideChange="onSlideChange"
         >
-          <swiper-slide v-for="(a, i) in 6" :key="i">
+          <swiper-slide v-for="(a, i) in 7" :key="i">
             <img :src="require(`./assets/images/banner0${i +1}.jpg`)">
           </swiper-slide>
         </swiper>
@@ -28,13 +28,23 @@
     <section id="sectionPin">
       <div class="pin-wrap">
         <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-        <img src="./assets/images/banner02.jpg">
-        <img src="./assets/images/banner01.jpg">
-        <img src="./assets/images/banner04.jpg">
-        <img src="./assets/images/banner05.jpg">
-        <img src="./assets/images/banner06.jpg">
-        <img src="./assets/images/banner03.jpg">
-        <img src="./assets/images/banner07.jpg">
+          <a href="/artist">
+            <h3>NEW RELEASE</h3>
+            <!-- <img src="" alt=""> -->
+          </a>
+          <a href="/multimedia">
+            <h3>MUSIC VIDEO</h3>          
+          </a>
+          <a href="#">
+            <h3>CUBE CAFE PROMOTION</h3>
+          </a>
+          <a href="http://www.cubee.co.kr/" target="_blank">
+            <h3>OFFICIAL SHOP</h3>
+          </a>
+          <a href="https://www.anicube.com/" target="_blank">
+            <h3>ANICUBE</h3>
+          </a>
+
       </div>
     </section>
 
